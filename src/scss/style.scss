@@ -1,2 +1,34 @@
 @import './app/main.scss';
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Indie Flower', cursive;
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+  }
+
+#notesContainer {
+    padding: 50px;
+
+
+}
+
+.notes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    .single-note {
+        background-color: yellow;
+        border-radius: 8px;
+        width: 280px;
+        margin: 0 10px 20px
+        
+
+    }
+}
