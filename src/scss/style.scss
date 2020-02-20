@@ -6,7 +6,7 @@
 }
 body {
     font-family: 'Indie Flower', cursive;
-    font-size: 4em;
+    // font-size: 4em;
     margin: 0;
     padding: 0;
   }
@@ -27,8 +27,71 @@ body {
         background-color: yellow;
         border-radius: 8px;
         width: 280px;
-        margin: 0 10px 20px
+        margin: 0 10px 20px;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.5s;
+        cursor: pointer;
+        font-family: 'Indie Flower', cursive;
+
+        .note-header {
+            padding: 10px 16px 0;
+
+            .add-note {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                line-height: 24px;
+                text-align: center;
+                transition: all 0.3s;
+            
+                &:hover {
+                    background-color: blue;
+                }
+
+                &:focus {
+                    box-shadow: inset 2px 3px 0px rgba(0, 0, 0, 0.8);
+                }
+            
+            }
+            
+
         
 
+        }
+
+            .note-title, .note-content {
+                outline: 0;
+            }
+
+            .note-title {
+                font-size: 27px;
+                padding: 10px 16px 16px;
+
+            }
+
+            .note-head {
+                font-size: 23px;
+                padding: 10px 16px ;
+                text-align: right;
+                
+            }
+    
+
+            .note-content {
+                font-size: 22px;
+                padding: 10px 16px 16px;
+            }
+
+
+            //hover for the entire note
+            &:hover {
+                box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3)
+            }
+
+        }
+
     }
-}
+
+    
+
